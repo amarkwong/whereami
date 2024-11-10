@@ -1,0 +1,1 @@
+self.__REACT_LOADABLE_MANIFEST="{\"app/components/DynamicStreetView.tsx -> ../game/[gameId]/components/StreetView\":{\"id\":\"app/components/DynamicStreetView.tsx -> ../game/[gameId]/components/StreetView\",\"files\":[\"static/chunks/_app-pages-browser_app_game_gameId_components_StreetView_tsx.js\"]}}"

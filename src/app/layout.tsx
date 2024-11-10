@@ -1,14 +1,16 @@
-// app/layout.tsx
-'use client';
+import GameProviderWrapper from "./GameProviderWrapper";
 
-import React from 'react';
-import { GameProvider } from './context/GameContext';
-
+// src/app/layout.tsx
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html>
+      <head>
+        <title>StreetView Multiplayer Game</title>
+      </head>
       <body>
-        <GameProvider>{children}</GameProvider>
+        <GameProviderWrapper>
+          {children}
+        </GameProviderWrapper>
       </body>
     </html>
   );

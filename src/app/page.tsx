@@ -1,10 +1,6 @@
 // app/page.tsx
-import dynamic from 'next/dynamic';
 import React from 'react';
-
-const StreetView = dynamic(() => import('./components/StreetView'), {
-  ssr: false,
-});
+import DynamicStreetView from './components/DynamicStreetView';
 
 const HomePage = () => {
   const latitude = 37.7749; // Example coordinates
@@ -12,7 +8,8 @@ const HomePage = () => {
 
   return (
     <div>
-      <StreetView lat={latitude} lng={longitude} />
+      <h1>Welcome to WhereAmI!</h1>
+      <DynamicStreetView lat={latitude} lng={longitude} />
     </div>
   );
 };
